@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hair Loss Prediction Result</title>
+    <style>
+      body {
+        background-color:  lightblue;
+      }
+      .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      h1 {
+        font-size: 48px;
+        margin-bottom: 32px;
+      }
+      .result {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: 1px solid #E0E0E0;
+        padding: 32px;
+        border-radius: 8px;
+        background-color: white;
+        box-shadow: 0px 0px 10px #E0E0E0;
+      }
+      img {
+        width: 200px;
+        height: 200px;
+        margin-bottom: 16px;
+      }
+      p {
+        font-size: 24px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Hair Loss Prediction Result</h1>
+      <div class="result">
+        <img src="{{ url_for('static', filename='img/aa.png') }}">
+        <p>The model predicts that this is Alopecia Areata. Below Mentioned are some solutions for your problem</p>
+        <br>
+        <p> The most common form of alopecia areata treatment is the use of corticosteroids, powerful anti-inflammatory drugs that can suppress the immune system.</p>
+      </div>
+    </div>
+  </body>
+</html>

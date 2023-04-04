@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hair Loss Prediction Result</title>
+    <style>
+      body {
+        background-color:  lightblue;
+      }
+      .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      h1 {
+        font-size: 48px;
+        margin-bottom: 32px;
+      }
+      .result {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: 1px solid #E0E0E0;
+        padding: 32px;
+        border-radius: 8px;
+        background-color: white;
+        box-shadow: 0px 0px 10px #E0E0E0;
+      }
+      img {
+        width: 200px;
+        height: 200px;
+        margin-bottom: 16px;
+      }
+      p {
+        font-size: 24px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Hair Loss Prediction Result</h1>
+      <div class="result">
+        <img src="{{ url_for('static', filename='img/aa.png') }}">
+        <p>You Have Healthy Hair! Below are some solutions to keep your hair healthy and prevent further Hair Loss</p>
+        <br>
+        <h3>Diet</p><h3>
+		<p>A diet containing raw vegetables and fresh herbs, like the Mediterranean diet, may reduce the risk of androgenic alopecia</p><br>
+		<h3>Coconut Oil</h3><br>
+		<p>According to a 2018 review of studies, researchers believe that coconut oil may help prevent hair damage from grooming and ultraviolet (UV) light exposure.</p>
+      </div>
+    </div>
+  </body>
+</html>
